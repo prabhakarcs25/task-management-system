@@ -42,7 +42,7 @@ app.use('/api/', limiter);
 // ============================================
 // DATABASE CONNECTION
 // ============================================
-console.log(process.env.MONGODB_URI)
+
 mongoose.connect(process.env.MONGODB_URI )
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => {
