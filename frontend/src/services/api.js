@@ -46,6 +46,7 @@ api.interceptors.response.use(
 export const authService = {
   register: (name, email, password, confirmPassword) => {
     console.log('Registering:', { name, email });
+    console.log(API_BASE_URL)
     return api.post('/auth/register', { name, email, password, confirmPassword });
   },
 
