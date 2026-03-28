@@ -50,6 +50,8 @@ const Register = () => {
       }
 
       console.log('Submitting registration...');
+
+       console.log({authService})
       const response = await authService.register(name, email, password, confirmPassword);
       
       console.log('Registration response:', response.data);
@@ -91,7 +93,7 @@ const Register = () => {
 
         {error && <div className="alert alert-error">{error}</div>}
         {success && <div className="alert alert-success">{success}</div>}
-  console.log(authService)
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
