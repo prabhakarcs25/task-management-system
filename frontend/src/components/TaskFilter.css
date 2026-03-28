@@ -1,0 +1,70 @@
+/* ============================================
+   TASK FILTER STYLES
+   ============================================ */
+
+.task-filter {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.task-filter h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background-color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+.task-filter button {
+  margin-top: 10px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .task-filter {
+    top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-filter {
+    position: relative;
+    top: 0;
+  }
+}

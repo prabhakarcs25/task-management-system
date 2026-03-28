@@ -1,0 +1,33 @@
+/* ============================================
+   TASK LIST STYLES
+   ============================================ */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-list .empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+}
+
+.task-list .empty-state h3 {
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .task-list {
+    gap: 12px;
+  }
+}
